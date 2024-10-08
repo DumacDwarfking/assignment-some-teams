@@ -133,17 +133,25 @@ $teams = [
     ],
 ];
 
-foreach ($teams as $name => $team) {
-?> <div>
-        <a href="<?= $team['url'] ?>">
-            <h3><?= $name ?></h3>
-        </a>
-        <img src="<?= $team['logo'] ?>">
-        <p><?= $team['league'] ?></p>
-        <p><?= $team['city'] ?></p>
-        <p><?= $team['group'] ?></p>
-        <p><?= $team['uefa-coefficient-ranking'] ?></p>
-    </div> <?php
-        }
+?>
+<main>
+    <?php
 
-        require_once __DIR__ . '/footer.php';
+    foreach ($teams as $name => $team) {
+    ?> <div class="teamContainer">
+            <a href="<?= $team['url'] ?>">
+                <h3><?= $name ?></h3>
+            </a>
+            <img src="<?= $team['logo'] ?>" class="logo">
+            <p><?= $team['league'] ?></p>
+            <p><?= $team['city'] ?></p>
+            <p><?= $team['group'] ?></p>
+            <p><?= $team['uefa-coefficient-ranking'] ?></p>
+        </div> <?php
+            }
+
+                ?>
+</main>
+<?php
+
+require_once __DIR__ . '/footer.php';
