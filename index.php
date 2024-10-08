@@ -134,7 +134,14 @@ $teams = [
 ];
 
 ?>
-
+<nav>
+    <a href="about.php">
+        <p class="navlink">About</p>
+    </a>
+    <a href="">
+        <p class="navlink">Contact</p>
+    </a>
+</nav>
 <main>
     <?php
 
@@ -149,7 +156,8 @@ $teams = [
                     <?= $team['league'] ?>
                 </p>
                 <p class="containerText">
-                    <b>City: </b><?= $team['city'] ?>
+                    <b>City: </b>
+                    <?= $team['city'] ?>
                 </p>
                 <p class="containerText">
                     <b>Group: </b>
