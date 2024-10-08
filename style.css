@@ -16,6 +16,8 @@ main {
   flex-wrap: wrap;
 }
 
+.containerLink {
+}
 .teamContainer {
   background-color: white;
   opacity: 0.9;
@@ -24,8 +26,12 @@ main {
   margin: 1%;
   display: block;
   border-radius: 25px 25px 25px 25px;
+  transition: 0.2s ease;
+  cursor: pointer;
 }
-
+.teamContainer:hover {
+  transform: translateY(-10px) scale(1.01);
+}
 .teamName {
   text-align: center;
 }

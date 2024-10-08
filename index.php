@@ -143,11 +143,20 @@ $teams = [
                 <h3 class="teamName"><?= $name ?></h3>
             </a>
             <img src="<?= $team['logo'] ?>" class="logo">
-            <p class="containerText">League: <?= $team['league'] ?></p>
-            <p class="containerText">City: <?= $team['city'] ?></p>
-            <p class="containerText">Group: <?= $team['group'] ?></p>
             <p class="containerText">
-                <b>UEFA ranking: </b><?= $team['uefa-coefficient-ranking'] ?>
+                <b>League: </b>
+                <?= $team['league'] ?>
+            </p>
+            <p class="containerText">
+                <b>City: </b><?= $team['city'] ?>
+            </p>
+            <p class="containerText">
+                <b>Group: </b>
+                <?= $team['group'] ?>
+            </p>
+            <p class="containerText">
+                <b>UEFA ranking: </b>
+                <?= $team['uefa-coefficient-ranking'] ?>
             </p>
         </div> <?php
             }
