@@ -140,13 +140,15 @@ $teams = [
     foreach ($teams as $name => $team) {
     ?> <div class="teamContainer">
             <a href="<?= $team['url'] ?>">
-                <h3><?= $name ?></h3>
+                <h3 class="teamName"><?= $name ?></h3>
             </a>
             <img src="<?= $team['logo'] ?>" class="logo">
-            <p><?= $team['league'] ?></p>
-            <p><?= $team['city'] ?></p>
-            <p><?= $team['group'] ?></p>
-            <p><?= $team['uefa-coefficient-ranking'] ?></p>
+            <p class="containerText">League: <?= $team['league'] ?></p>
+            <p class="containerText">City: <?= $team['city'] ?></p>
+            <p class="containerText">Group: <?= $team['group'] ?></p>
+            <p class="containerText">
+                <b>UEFA ranking: </b><?= $team['uefa-coefficient-ranking'] ?>
+            </p>
         </div> <?php
             }
 
