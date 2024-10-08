@@ -16,8 +16,6 @@ main {
   flex-wrap: wrap;
 }
 
-.containerLink {
-}
 .teamContainer {
   background-color: white;
   opacity: 0.9;
@@ -34,6 +32,18 @@ main {
 }
 .teamName {
   text-align: center;
+}
+.teamName:link {
+  text-decoration: none;
+}
+.teamName:visited {
+  text-decoration: none;
+}
+.teamName:hover {
+  text-decoration: underline;
+}
+.teamName:active {
+  text-decoration: underline;
 }
 
 .logo {
@@ -57,8 +67,8 @@ a:visited {
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
 }

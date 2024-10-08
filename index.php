@@ -134,34 +134,37 @@ $teams = [
 ];
 
 ?>
+
 <main>
     <?php
 
     foreach ($teams as $name => $team) {
-    ?> <div class="teamContainer">
-            <a href="<?= $team['url'] ?>">
-                <h3 class="teamName"><?= $name ?></h3>
-            </a>
-            <img src="<?= $team['logo'] ?>" class="logo">
-            <p class="containerText">
-                <b>League: </b>
-                <?= $team['league'] ?>
-            </p>
-            <p class="containerText">
-                <b>City: </b><?= $team['city'] ?>
-            </p>
-            <p class="containerText">
-                <b>Group: </b>
-                <?= $team['group'] ?>
-            </p>
-            <p class="containerText">
-                <b>UEFA ranking: </b>
-                <?= $team['uefa-coefficient-ranking'] ?>
-            </p>
-        </div> <?php
-            }
+    ?>
+        <a class="teamContainer" href="<?= $team['url'] ?>">
+            <div>
+                <h2 class="teamName"><?= $name ?></h2>
+                <img src="<?= $team['logo'] ?>" class="logo">
+                <p class="containerText">
+                    <b>League: </b>
+                    <?= $team['league'] ?>
+                </p>
+                <p class="containerText">
+                    <b>City: </b><?= $team['city'] ?>
+                </p>
+                <p class="containerText">
+                    <b>Group: </b>
+                    <?= $team['group'] ?>
+                </p>
+                <p class="containerText">
+                    <b>UEFA ranking: </b>
+                    <?= $team['uefa-coefficient-ranking'] ?>
+                </p>
+            </div>
+        </a>
+    <?php
+    }
 
-                ?>
+    ?>
 </main>
 <?php
 
