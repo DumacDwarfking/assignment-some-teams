@@ -5,22 +5,9 @@ require_once __DIR__ . '/header.php';
 require_once __DIR__ . '/data.php';
 
 ?>
-<nav>
-    <a href="index.php">
-        <p id="siteName">Team Tracker</p>
-    </a>
-    <div id="navDiv">
-        <a href="about.php">
-            <p class="navlink">About</p>
-        </a>
-        <a href="">
-            <p class="navlink">Contact</p>
-        </a>
-    </div>
-</nav>
 <main>
-    <?php
 
+    <?php
     foreach ($teams as $name => $team) {
     ?>
         <a class="teamContainer" href="<?= $team['url'] ?>">
@@ -57,8 +44,8 @@ require_once __DIR__ . '/data.php';
         </a>
     <?php
     }
-
     ?>
+
 </main>
 <?php
 

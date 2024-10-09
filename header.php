@@ -13,4 +13,20 @@
 
 </head>
 
-<?php
+<body>
+
+    <nav>
+        <a href="index.php">
+            <p id="siteName">Team Tracker</p>
+        </a>
+        <div id="navDiv">
+            <a href="about.php">
+                <p class="navlink">About</p>
+            </a>
+            <a href=""> <!--This link is just for show-->
+                <p class="navlink">Contact</p>
+            </a>
+        </div>
+    </nav>
+
+    <?php
