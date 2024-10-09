@@ -12,7 +12,7 @@ $teams = [
         'group' => 'D'
     ],
     'Chelsea' => [
-        'league' => 'Women\’s Super League (England)',
+        'league' => 'Women’s Super League (England)',
         'uefa-coefficient-ranking' => 6,
         'city' => 'London',
         'url' => 'https://www.chelseafc.com/',
@@ -60,7 +60,7 @@ $teams = [
         'group' => 'N/A'
     ],
     'Arsenal' => [
-        'league' => 'Women\’s Super League (England)',
+        'league' => 'Women’s Super League (England)',
         'uefa-coefficient-ranking' => 7,
         'city' => 'London',
         'url' => 'https://www.arsenal.com/',
@@ -100,7 +100,7 @@ $teams = [
         'group' => 'B'
     ],
     'Galatasaray' => [
-        'league' => 'Turkish Women\’s Super League',
+        'league' => 'Turkish Women’s Super League',
         'uefa-coefficient-ranking' => 'Not ranked',
         'city' => 'Istanbul',
         'url' => 'https://www.galatasaray.org/',
@@ -124,7 +124,7 @@ $teams = [
         'group' => 'D'
     ],
     'Manchester City' => [
-        'league' => 'Women\’s Super League (England)',
+        'league' => 'Women’s Super League (England)',
         'uefa-coefficient-ranking' => 9,
         'city' => 'Manchester',
         'url' => 'https://www.mancity.com/',
@@ -135,12 +135,17 @@ $teams = [
 
 ?>
 <nav>
-    <a href="about.php">
-        <p class="navlink">About</p>
+    <a href="index.php">
+        <p id="siteName">Team Tracker</p>
     </a>
-    <a href="">
-        <p class="navlink">Contact</p>
-    </a>
+    <div id="navDiv">
+        <a href="about.php">
+            <p class="navlink">About</p>
+        </a>
+        <a href="">
+            <p class="navlink">Contact</p>
+        </a>
+    </div>
 </nav>
 <main>
     <?php
@@ -151,22 +156,32 @@ $teams = [
             <div>
                 <h2 class="teamName"><?= $name ?></h2>
                 <img src="<?= $team['logo'] ?>" class="logo">
-                <p class="containerText">
-                    <b>League: </b>
-                    <?= $team['league'] ?>
-                </p>
-                <p class="containerText">
-                    <b>City: </b>
-                    <?= $team['city'] ?>
-                </p>
-                <p class="containerText">
-                    <b>Group: </b>
-                    <?= $team['group'] ?>
-                </p>
-                <p class="containerText">
-                    <b>UEFA ranking: </b>
-                    <?= $team['uefa-coefficient-ranking'] ?>
-                </p>
+                <ul>
+                    <li>
+                        <p class="containerText">
+                            <b>League: </b>
+                            <?= $team['league'] ?>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="containerText">
+                            <b>City: </b>
+                            <?= $team['city'] ?>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="containerText">
+                            <b>Group: </b>
+                            <?= $team['group'] ?>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="containerText">
+                            <b>UEFA ranking: </b>
+                            <?= $team['uefa-coefficient-ranking'] ?>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </a>
     <?php
